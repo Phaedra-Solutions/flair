@@ -47,6 +47,7 @@
 .pages{
   flex:3;
   background-color: #EFF1F7;
+  min-height: 550px;
 }
 
 .circle{
