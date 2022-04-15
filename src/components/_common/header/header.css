@@ -1,8 +1,11 @@
 .header{
   position: absolute;
-  width: 95%;
+  /* width: 95%; */
+  left:0;
+  right: 0;
   padding-top: 20px;
   z-index: 10;
+  padding-right: 20px;
 }
 
 .header .container .top-bar{
