@@ -1,0 +1,104 @@
+.arrange-chat{
+  background: rgb(1,196,186);
+background: linear-gradient(90deg, rgba(1,196,186,1) 0%, rgba(46,155,197,1) 51%, rgba(93,113,209,1) 100%);
+display: flex;
+margin: 20px 100px
+}
+.text-area{
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  padding: 30px 20px;
+}
+.icon-area{
+  flex: 1;
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.booknow-btn{
+  width: fit-content;
+  background: none;
+  color: white;
+  padding: 5px 30px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.progress-main{
+  display: flex;
+  background: lightgray;
+  margin: 20px 100px
+
+}
+.progress-container{
+  flex:1;
+  background-color: #EFF1F7;
+  z-index: 20;
+}
+.progress-items{
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  background: #EFF1F7;
+  padding: 10px 0px;
+}
+.progress-items .item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 15px;
+  padding: 10px 0px;
+  /* border-bottom: 1px solid lightgray; */
+}
+.box-shadow {
+  -moz-box-shadow:    1px 1px 10px 3px #ccc;
+  -webkit-box-shadow: 1px 1px 10px 3px #ccc;
+  box-shadow: 1px 1px 10px 3px #ccc;
+}
+.shadow{
+  box-shadow: 5px 1px 10px 1px #ccc;
+}
+.my-job-cont{
+  margin: 10px 100px 40px 100px;
+  display: flex;
+}
+.my-job-text{
+  color: gray;
+  font-size: 12px;
+  font-weight:600;
+}
+.go-to-btn{
+  color: white;
+  background-color: #EA571C;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.div-sad{
+  padding: 20px;
+  border-right: 1px solid lightgray;
+}
+
+.CircularProgress{
+  position: relative;
+}
+.CircularProgress .text{
+  font-weight: bolder;
+  color: #21155F;
+  font-size: 22px;
+}
+.textContent{
+  position: absolute;
+  top:37px;
+  left:30px;
+}
+.shadow-icon{
+    width: 70px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #4176BF;
+    margin-top: 10px;
+}

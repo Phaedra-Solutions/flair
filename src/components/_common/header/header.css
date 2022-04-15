@@ -1,0 +1,47 @@
+.header{
+  position: absolute;
+  width: 95%;
+  padding-top: 20px;
+  z-index: 10;
+}
+
+.header .container .top-bar{
+  display: flex;
+  justify-content: end;
+}
+.header .container .nav-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .container .nav-container .nav-bar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.header .container .nav-container .nav-items{
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0px 0px 0px 20px;
+  text-decoration: none;
+}
+.avatar{
+  margin-left: 20px;
+}
+.flair-heading{
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+}
+.logout{
+  background-color: #01C4BA;
+  margin-left: 20px;
+  color: white;
+  border: 1px solid #01C4BA;
+  border-radius: 2px;
+  font-size: 12px;
+  padding: 5px 20px;
+  cursor:pointer;
+}
