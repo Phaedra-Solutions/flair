@@ -27,7 +27,7 @@
 
 }
 .main-content{
-  /* height:500px; */
+  min-height:550px;
   height: calc(100vh - 320px) !important;
 }
 .routes{
