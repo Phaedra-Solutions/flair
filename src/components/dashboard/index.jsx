@@ -10,7 +10,7 @@ import { BsShield, BsCamera } from "react-icons/bs";
 import { FaRegSmile } from "react-icons/fa";
 import { CgFileDocument } from "react-icons/cg";
 import { Icon } from "../_common";
-
+import bannerImg from "../../img/dummy.jpg";
 const Dashboard = () => {
   const [currentPage, setcurrentPage] = useState("Home");
 
@@ -121,50 +121,48 @@ const Dashboard = () => {
       ),
     },
   };
-
+  const height = window.innerHeight;
   return (
     <div className="main-container">
-      <Header></Header>
-      <div className="img-name">
-        <div className="circle">
-          <div className="inside-circle flex-center ">
-            <BsCamera color="gray" size="1.5em" fontWeight={"bold"} />
-          </div>
-          <div className="add-img flex-center circle-shadow">
-            <AiOutlinePlus color="#EA571C" />
-          </div>
-        </div>
-        <span
-          className="text-white text-28 bolder"
-          style={{ marginLeft: "20px" }}
-        >
-          James Huxley
-        </span>
-      </div>
-
-      <div className="content">
+      <div
+        className="testing"
+        style={{
+          backgroundImage: `linear-gradient(to right, rgba(14,116,116,0.8) 0%, rgba(34,129,135,0.8) 43%, rgba(31,83,110,0.8) 59%, rgba(26,15,72,0.9) 100%), url(${bannerImg})`,
+        }}
+      >
         <div className="banner">
-          <img
-            src={require("../../img/dummy.jpg")}
-            className="banner-img"
-          ></img>
-        </div>
-        <div className="main-content">
-          <div className="routes">
-            <div className="tabs">
-              {Object.keys(components).map((comp) => (
-                <TabItem
-                  displayName={comp}
-                  item={components[comp]}
-                  onClick={() => setcurrentPage(comp)}
-                  currentPage={currentPage}
-                />
-              ))}
+          <Header></Header>
+          <div className="img-name">
+            <div className="circle">
+              <div className="inside-circle flex-center ">
+                <BsCamera color="gray" size="1.5em" fontWeight={"bold"} />
+              </div>
+              <div className="add-img flex-center circle-shadow">
+                <AiOutlinePlus color="#EA571C" />
+              </div>
             </div>
-            <div className="pages route-component-shadow">
-              {components[currentPage].comp}
-            </div>
+            <span
+              className="text-white text-28 bolder"
+              style={{ marginLeft: "20px" }}
+            >
+              James Huxley
+            </span>
           </div>
+        </div>
+      </div>
+      <div className="routes">
+        <div className="tabs">
+          {Object.keys(components).map((comp) => (
+            <TabItem
+              displayName={comp}
+              item={components[comp]}
+              onClick={() => setcurrentPage(comp)}
+              currentPage={currentPage}
+            />
+          ))}
+        </div>
+        <div className="pages route-component-shadow">
+          {components[currentPage].comp}
         </div>
       </div>
     </div>

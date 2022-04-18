@@ -12,7 +12,7 @@ const Home = () => {
     { name: "Application form", status: false },
   ];
   return (
-    <div>
+    <div className="home-container">
       <div className="progress-main box-shadow">
         <div className="progress-container shadow flex-center">
           <GradientCircularProgress
@@ -74,7 +74,7 @@ const Home = () => {
           <span className="shadow-icon"></span>
         </div>
       </div>
-      <div style={{ margin: "20px 100px 10px" }}>
+      <div style={{ margin: "20px 0px 10px" }}>
         <a
           href="#"
           className="text-16 bolder"
